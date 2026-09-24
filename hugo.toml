@@ -1,0 +1,7 @@
+baseURL = 'https://oksavoz.github.io'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+theme = 'hugo-simple'
+[params]
+  [params.author]
+    name = "Oksana Voznyuk"

@@ -1,0 +1,16 @@
+repos:
+- repo: local
+  hooks:
+    - id: hugo-build
+      name: hugo-build
+      entry: hugo
+      args: ["--minify", "--environment", "production"]
+      language: system
+      pass_filenames: false
+      always_run: true
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v5.0.0
+  hooks:
+    - id: check-yaml
+    - id: end-of-file-fixer
+    - id: trailing-whitespace
